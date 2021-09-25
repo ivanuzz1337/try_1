@@ -1,0 +1,350 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body{
+  font-family: 'Arsenal', sans-serif;
+  /*background: gray;*/
+}
+.container {
+  margin-left: 55px;
+  margin-top: 26px;
+}
+.topbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-top: 26px;
+  /*border: 1px solid blue;*/
+}
+.topbar_element1 {
+  /*width: 250px;*/
+  height: 37px;
+  /*border: 1px solid black;*/
+  font-weight: 300;
+  font-size: 31px;
+  /*line-height: 37px;*/
+}
+.topbar_element2 {
+  /*border: 1px solid;*/
+  margin-left: 19px;
+}
+.arrows {  
+  margin-left: auto;
+  /*border: 1px solid black;*/
+  display: flex;
+  /*flex-direction: row;*/
+  /*justify-content: center;*/
+}
+.topbar_element3 {
+  align-self: flex-end;
+  margin-right: 10px;
+  /*border: 1px solid;*/
+}
+.topbar_element4 {
+  /*border: 1px solid;*/
+}
+.block {
+  height: 387px;
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  min-width: 0px;
+}
+.brick {
+  margin-right: 30px;
+  padding: 20px;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  border-radius: 5px;
+  /*min-width: 247px;*/
+  /*max-width: 270px;*/
+}
+
+.topblock {
+  /*position: absolute;*/
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.topblock1 {
+  position: absolute;
+
+  background: #EEFCF6;
+  border-radius: 5px;
+  color: #3DDC97;
+
+  width: 78px;
+  height: 25px;
+  left: 0px;
+  top: 0px;
+
+  padding: 5px 10px;
+  margin: 0px 5px;
+}
+.topblock2 {
+  position: absolute;
+
+  background: #FCF4ED;
+  border-radius: 5px;
+  color: #E49F62;
+
+  width: 95px;
+  height: 25px;
+  left: 83px;
+  top: 0px;
+
+  font-size: 13px;
+  line-height: 15px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  margin: 0px 5px;
+  padding: 5px 10px;
+}
+.midblock {
+}
+.row1 {
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 19px;
+  color: #888888;
+
+  width: 230px;
+  height: 19px;
+  left: 0px;
+  top: 0px;
+}
+.row2 {
+  width: 230px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+
+  font-size: 15px;
+  line-height: 18px;
+  color: #444444;
+}
+.row3 {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  line-height: 16px;
+  color: #00ADEF;
+}
+.row3_1 {
+  margin: 0px 5px;
+}
+.row4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 34px;
+}
+.price {
+  font-size: 19px;
+  line-height: 23px;
+  color: #444444;
+}
+.old_price {
+  font-size: 13px;
+  line-height: 15px;
+  color: #888888;
+  display: flex;
+  align-items: flex-end;
+  text-decoration-line: line-through;
+  margin: 0px 5px;
+}
+
+.row5 {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.downbotton1 {
+  position: relative;
+  width: 152px;
+  height: 48px;
+  background: #00ADEF;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.downbotton1_content {
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.downbotton2 {}
+.downbotton3 {}
+
+/* Слайдер */
+.slider {
+  min-width: 0px;
+  position: relative;
+}
+.slick-slider{
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+  display: flex;
+  z-index: 10;
+  /*width: 100%;*/
+  /*max-width: 1200px;*/
+}
+/* Слайд */
+.slick-slide{
+  /*max-width: 270px;*/
+
+}
+
+.brick.slick-slide{
+  /*max-width: 270px;*/
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{
+
+}
+/* Слайд основной */
+.slick-slide.slick-current{
+
+}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.arrows .slick-arrow{
+  /*position: absolute;*/
+  /*top: 50%;*/
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+
+}
+/* Стрелка влево */
+.arrows .slick-arrow.slick-prev{
+  /*margin-right: 30px;*/
+  /*margin-left: 30px;*/
+  font-size: 0;
+  background: url('../img/round_arrow_left.svg') 0 0 / 70% no-repeat;
+  /*z-index: 110;*/
+}
+/* Стрелка вправо */
+.arrows .slick-arrow.slick-next{
+  /*right: 0;*/
+  margin-right: 30px;
+
+  background: url('../img/round_arrow_right.svg') 0 0 / 70% no-repeat;
+  font-size: 0;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{
+opacity: 0.2;
+}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+@media(max-width: 320px){
+  .container{
+    margin-left: 15px;
+    margin-top: 18px;
+    /*max-width: none;*/
+  }
+.topblock2 {
+  /*position: relative;*/
+        /*bottom: auto;*/
+        left: auto;
+  /*left: 183px;*/
+  top: 17%;
+}
+.downbotton2 {
+  position: absolute;
+  top: 20px;
+  margin-left: 185px;
+  z-index: 122;
+}
+.downbotton3 {
+ position: absolute;
+  top: 20px;
+  margin-left: 220px;
+  z-index: 122;
+}
+.row4{
+margin-top: 19px;
+  }
+.downbotton1{
+  position: relative;
+  flex: 1;
+}
+
+.arrows{
+  position: absolute;
+  /*top: 50%;*/
+  z-index: -1;
+  width: 30px;
+  height: 30px;
+  /*top: 0px;*/
+}
+.topbar {
+/*  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;*/
+  /*align-items: center;*/
+  margin-bottom: 15px;
+  margin-top: 0px;
+  /*border: 1px solid blue;*/
+}
+.topbar_element1{
+  width: 245px;
+}
+}
